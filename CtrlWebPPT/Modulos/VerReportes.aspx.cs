@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 using System.Diagnostics;
+using System.Drawing;
 
 namespace CtrlWebPPT.Modulos
 {
@@ -74,11 +75,13 @@ namespace CtrlWebPPT.Modulos
         protected void Button2_Click(object sender, EventArgs e)
         {
             generarFacturas();
+            Response.Write("No hay datos en Facturas para mostrar");
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
             generarOrdenes();
+            Response.Write("No hay datos en Ordenes para mostrar");
         }
 
         protected void Button4_Click(object sender, EventArgs e)
@@ -90,6 +93,21 @@ namespace CtrlWebPPT.Modulos
         {
             //Process.Start("https://localhost:44305/");
             Response.Redirect("https://localhost:44305/");
+        }
+
+        protected void HiddenField1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button8_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("https://localhost:44305/Modulos/VerGraficos.aspx");
         }
     }
 }

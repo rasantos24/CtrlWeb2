@@ -24,7 +24,7 @@ namespace CtrlWebPPT.Modulos
 
         void consultaInventario()
         {
-            SqlDataAdapter dainv = new SqlDataAdapter("select NoInventario, Fecha, IdAlmacen, Referencia, Notas, TotalCantidad, TotalConteo, TotalDiferencia from icInventarioFisico where Referencia like '" + TextBox1.Text + "%'", inv);
+            SqlDataAdapter dainv = new SqlDataAdapter("select * from icInventarioFisico where Referencia like '" + TextBox1.Text + "%'", inv);
             DataTable dtinv = new DataTable();
             dainv.Fill(dtinv);
             this.GridView1.DataSource = dtinv;

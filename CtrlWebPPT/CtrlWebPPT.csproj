@@ -542,6 +542,13 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Modulos\VerGraficos.aspx.cs">
+      <DependentUpon>VerGraficos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\VerGraficos.aspx.designer.cs">
+      <DependentUpon>VerGraficos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\VerInventarios.aspx.cs">
       <DependentUpon>VerInventarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -600,6 +607,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Modulos\VerGraficos.aspx" />
     <Content Include="Modulos\VerInventarios.aspx" />
     <Content Include="Modulos\VerReportes.aspx" />
     <Content Include="Modulos\VerResultados.aspx" />
